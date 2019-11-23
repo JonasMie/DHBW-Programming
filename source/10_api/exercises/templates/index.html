@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/style.css">
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+  </head>
+  <body>
+
+    <div class="row">
+
+      <div class="component-wrapper col-4">
+        <div class="card text-white bg-primary mb-3 component" >
+          <div class="card-header">News API</div>
+          <div class="card-body">
+            <h2 class="card-title">Top News</h2>
+
+            <form method="post" action="/">
+                <select  name="news-category">
+                    <option value="all" selected>All</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="general">General</option>
+                    <option value="health">Health</option>
+                    <option value="science">Science</option>
+                    <option value="sports">Sports</option>
+                    <option value="technology">Technology</option>
+                </select>
+                <input class="btn btn-secondary btn-sm" type="submit"/>
+            </form>
+
+            <div class="card-content">
+              <!-- INSERT HEADLINES HERE -->
+              <p class="card-text">
+                <a href="#">This is a News article headline</a>
+              </p>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="component-wrapper col-4">
+        <div class="card text-white bg-info mb-3 component" >
+          <div class="card-header">Wikipedia API</div>
+          <div class="card-body">
+            <h2 class="card-title">Wiki Articles</h2>
+
+            <form method="post" action="/">
+                <input type="text" name="wiki-keyword" placeholder="Keyword">
+                <input class="btn btn-secondary btn-sm" type="submit"/>
+            </form>
+
+            <div class="card-content">
+              <!-- INSERT ARTICLES HERE -->
+              <p class="card-text">
+                <a href="#">This is a Wiki article headline</a>
+
+                <p class="wiki-snippet">... and the snippet</p>
+              </p>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="component-wrapper col-4">
+        <div class="card text-white bg-warning mb-3 component" >
+          <div class="card-header">Pastebin API</div>
+          <div class="card-body">
+            <h2 class="card-title">Pastebin Pastes</h2>
+
+            <form method="post" action="/">
+                <textarea  name="paste-text" placeholder="Enter your paste here"></textarea>
+                <input class="btn btn-secondary btn-sm" type="submit"/>
+            </form>
+
+            <div class="card-content">
+              <!-- INSERT PASTE LINK HERE -->
+              <p class="card-text">
+                <a href=""></a>
+              </p>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

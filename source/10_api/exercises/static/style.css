@@ -1,0 +1,33 @@
+html {
+  widht: 100%;
+  background: black;
+  height: 100vh;
+}
+
+body {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  background: none;
+}
+
+.component-wrapper{
+  padding: 0 7px;
+}
+
+.component {
+
+  padding:0
+}
+
+.component a{
+  color: white;
+}
+
+.card-content {
+  padding-top: 20px;
+}
+
+textarea {
+  width: 100%;
+}
