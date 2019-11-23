@@ -1,5 +1,5 @@
 # Programming
-The documents for the DHBW Programming Lecture
+Here you can find the documents for the DHBW Programming Lecture and the Programming Crash Course.
 
 These documents include all relevant information regarding the introduction to programming, subdivided into several chapters. Each of them is based on the knowledge of the previous chapter.
 
